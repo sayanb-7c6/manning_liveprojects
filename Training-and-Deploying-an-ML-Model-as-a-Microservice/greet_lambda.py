@@ -10,13 +10,11 @@ def lambda_handler(event, context):
         greeting = event['greet']
     else:
         greeting = 'Hello'
-    
-    
+        
     if 'name' in event:
         name = event['name']
     else:
-        name = 'World'
-        
+        name = 'World'        
         
     greetings = greeting + ' ' +  name + '!'
     print(greetings)
