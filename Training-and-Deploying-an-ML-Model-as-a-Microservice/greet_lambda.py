@@ -18,6 +18,6 @@ def lambda_handler(event, context):
         name = 'World'
         
         
-    greetings = greeting + name + '!'
+    greetings = greeting + ' ' +  name + '!'
     print(greetings)
     return greetings
